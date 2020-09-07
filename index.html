@@ -105,12 +105,16 @@
 
     <script>
      const TEXT=window.document.querySelector('#txtToSay');
-      const say = text => speechSynthesis.speak(new SpeechSynthesisUtterance(text))
+      const say = text => speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 
       window.document.querySelector('button').addEventListener('click', () => {
-      say(TEXT.value)
-     })
+      say(TEXT.value);
+     });
 
+      
+      console.clear();
+      console.log('%c Hi there!','color:blue;font-family:cursive;font-size:4rem;');
+    
     </script> 
 
     <noscript>
